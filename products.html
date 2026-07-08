@@ -41,8 +41,8 @@
 <section class="page-hero">
   <div class="wrap">
     <span class="breadcrumb">Products</span>
-    <h1>Made from indigenous grains, made for your table</h1>
-    <p>Explore Jufra's full range of porridge, composite and pure grain flours — each one naturally processed, with no additives.</p>
+    <h1>Our Products</h1>
+    <p>Premium indigenous grain products crafted to nourish families, support farmers and promote healthier communities.</p>
   </div>
 </section>
 
@@ -55,49 +55,65 @@
       <button data-filter="pure">Pure Grain Flours</button>
       <button data-filter="bulk">Bulk Orders</button>
     </div>
-    <div class="product-grid">
+    <div class="product-grid" id="porridge">
 
       <div class="product-card" data-category="porridge">
-        <div class="product-media"><img src="assets/img/products-lineup.jpg" alt="Jufra Delight Uji Mix packaging"></div>
+        <div class="product-media">
+          <span class="product-badge">Instant Porridge Mix</span>
+          <picture><source srcset="assets/products/delight-uji-mix.webp" type="image/webp"><img src="assets/products/delight-uji-mix.png" loading="lazy" alt="Jufra Delight Uji Mix 1kg pack"></picture>
+        </div>
         <div class="product-body">
           <span class="product-tag">Porridge Flour</span>
           <h4>Delight Uji Mix</h4>
-          <p>Our flagship porridge blend of pearl millet, finger millet and sorghum. Gluten-free, no additives, delicious and nutritious.</p>
-          <div class="product-links"><a href="#">Nutrition Info</a><a href="#">Download Brochure</a><a href="contact.html#quote">Request Quote</a></div>
+          <p>A nutritious blend of indigenous grains including pearl millet, finger millet, sorghum and maize. Rich in fibre and ideal for the whole family.</p>
+          <div class="product-chips"><span>Gluten Free</span><span>No Additives</span><span>High Fibre</span><span>1kg Pack</span></div>
+          <div class="product-links"><a href="#delight-uji-mix">Learn More</a><a href="contact.html#quote">Request Quote</a></div>
         </div>
       </div>
 
       <div class="product-card" data-category="porridge">
-        <div class="product-media"><img src="assets/img/product-bags.jpg" alt="Jufra Delight Uji Mix Sour packaging"></div>
+        <div class="product-media">
+          <span class="product-badge">Fermented Porridge Mix</span>
+          <picture><source srcset="assets/products/delight-uji-mix-sour.webp" type="image/webp"><img src="assets/products/delight-uji-mix-sour.png" loading="lazy" alt="Jufra Delight Uji Mix Sour 1kg pack"></picture>
+        </div>
         <div class="product-body">
           <span class="product-tag">Porridge Flour</span>
           <h4>Delight Uji Mix Sour</h4>
-          <p>A traditionally fermented take on our classic porridge blend, delivering the tangy flavor many families grew up with.</p>
-          <div class="product-links"><a href="#">Nutrition Info</a><a href="#">Download Brochure</a><a href="contact.html#quote">Request Quote</a></div>
+          <p>Traditional fermented uji made from carefully selected indigenous grains for a rich, authentic taste and superior nutrition.</p>
+          <div class="product-chips"><span>Naturally Fermented</span><span>Gluten Free</span><span>Family Favourite</span><span>1kg Pack</span></div>
+          <div class="product-links"><a href="#delight-uji-mix-sour">Learn More</a><a href="contact.html#quote">Request Quote</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-category="composite">
-        <div class="product-media" style="display:flex;align-items:center;justify-content:center;"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="1.4"><path d="M4 12h16M4 12a8 8 0 0116 0M4 12a8 8 0 0016 0"/></svg></div>
-        <div class="product-body">
-          <span class="product-tag">Composite Flour</span>
-          <h4>Nzima Composite Flour</h4>
-          <p>A maize and sorghum blend built for everyday cooking and baking. Sold in convenient 1Kg net packs.</p>
-          <div class="product-links"><a href="#">Nutrition Info</a><a href="#">Download Brochure</a><a href="contact.html#quote">Request Quote</a></div>
+      <div class="product-card" data-category="pure" id="pure">
+        <div class="product-media">
+          <span class="product-badge">Premium Maize Flour</span>
+          <picture><source srcset="assets/products/aroma-maize-flour.webp" type="image/webp"><img src="assets/products/aroma-maize-flour.png" loading="lazy" alt="Aroma Sifted Maize Flour 1kg pack"></picture>
         </div>
-      </div>
-
-      <div class="product-card" data-category="pure">
-        <div class="product-media" style="display:flex;align-items:center;justify-content:center;"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
         <div class="product-body">
           <span class="product-tag">Pure Grain Flour</span>
           <h4>Aroma Sifted Maize Flour</h4>
-          <p>Fine-sifted maize flour, fortified with essential minerals and vitamins for everyday vitality. 1Kg net.</p>
-          <div class="product-links"><a href="#">Nutrition Info</a><a href="#">Download Brochure</a><a href="contact.html#quote">Request Quote</a></div>
+          <p>Finely sifted premium maize flour fortified with essential nutrients for soft, delicious ugali every day.</p>
+          <div class="product-chips"><span>Fortified</span><span>Fine Texture</span><span>High Quality</span><span>1kg Pack</span></div>
+          <div class="product-links"><a href="#aroma-maize-flour">Learn More</a><a href="contact.html#quote">Request Quote</a></div>
         </div>
       </div>
 
-      <div class="product-card" data-category="bulk">
+      <div class="product-card" data-category="composite" id="composite">
+        <div class="product-media">
+          <span class="product-badge">Composite Flour</span>
+          <picture><source srcset="assets/products/nzima-composite-flour.webp" type="image/webp"><img src="assets/products/nzima-composite-flour.png" loading="lazy" alt="Nzima Composite Flour 1kg pack"></picture>
+        </div>
+        <div class="product-body">
+          <span class="product-tag">Composite Flour</span>
+          <h4>Nzima Composite Flour</h4>
+          <p>A healthy blend of maize and sorghum delivering better nutrition, great taste and wholesome traditional meals.</p>
+          <div class="product-chips"><span>Maize &amp; Sorghum</span><span>High Fibre</span><span>Nutritious</span><span>1kg Pack</span></div>
+          <div class="product-links"><a href="#nzima-composite-flour">Learn More</a><a href="contact.html#quote">Request Quote</a></div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="bulk" id="bulk">
         <div class="product-media" style="display:flex;align-items:center;justify-content:center;"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="1.4"><path d="M12 2c-3 4-5 8-5 12a5 5 0 0010 0c0-4-2-8-5-12z"/></svg></div>
         <div class="product-body">
           <span class="product-tag">Bulk Orders</span>
@@ -107,6 +123,126 @@
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<section id="delight-uji-mix" class="product-detail">
+  <div class="wrap">
+    <div class="product-detail-grid">
+      <div class="product-detail-media">
+        <picture><source srcset="assets/products/delight-uji-mix.webp" type="image/webp"><img src="assets/products/delight-uji-mix.png" loading="lazy" alt="Jufra Delight Uji Mix 1kg pack"></picture>
+      </div>
+      <div class="product-detail-body">
+        <span class="product-tag">Instant Porridge Mix</span>
+        <h3>Delight Uji Mix</h3>
+        <p>Our flagship porridge blend brings together indigenous grains — pearl millet, finger millet, sorghum and maize — into one nutritious, easy-to-prepare mix. No additives, no shortcuts, just wholesome nutrition rooted in tradition.</p>
+        <span class="product-pack">1kg Net Pack</span>
+        <div class="product-detail-cols">
+          <div>
+            <h5>Benefits</h5>
+            <ul><li>Gluten free</li><li>No additives</li><li>High in fibre</li><li>Made from indigenous grains</li></ul>
+          </div>
+          <div>
+            <h5>Ingredients</h5>
+            <ul><li>Pearl millet (Ukwaju)</li><li>Finger millet (Wimbi)</li><li>Sorghum (Mtama)</li><li>Maize</li></ul>
+          </div>
+        </div>
+        <div class="product-ideal">
+          <span>Breakfast</span><span>Growing children</span><span>Expectant mothers</span><span>Schools</span><span>Hospitals</span><span>Homes</span>
+        </div>
+        <a href="contact.html#quote" class="product-cta-btn">Request a Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="delight-uji-mix-sour" class="product-detail">
+  <div class="wrap">
+    <div class="product-detail-grid">
+      <div class="product-detail-media">
+        <picture><source srcset="assets/products/delight-uji-mix-sour.webp" type="image/webp"><img src="assets/products/delight-uji-mix-sour.png" loading="lazy" alt="Jufra Delight Uji Mix Sour 1kg pack"></picture>
+      </div>
+      <div class="product-detail-body">
+        <span class="product-tag">Fermented Porridge Mix</span>
+        <h3>Delight Uji Mix Sour</h3>
+        <p>A traditionally fermented take on our classic porridge blend, made from carefully selected indigenous grains for the rich, tangy flavour many families grew up with — and the superior nutrition that comes with natural fermentation.</p>
+        <span class="product-pack">1kg Net Pack</span>
+        <div class="product-detail-cols">
+          <div>
+            <h5>Benefits</h5>
+            <ul><li>Naturally fermented</li><li>Gluten free</li><li>Family favourite</li><li>Made from indigenous grains</li></ul>
+          </div>
+          <div>
+            <h5>Ingredients</h5>
+            <ul><li>Pearl millet (Ukwaju)</li><li>Finger millet (Wimbi)</li><li>Sorghum (Mtama)</li><li>Maize</li></ul>
+          </div>
+        </div>
+        <div class="product-ideal">
+          <span>Breakfast</span><span>Growing children</span><span>Expectant mothers</span><span>Schools</span><span>Hospitals</span><span>Homes</span>
+        </div>
+        <a href="contact.html#quote" class="product-cta-btn">Request a Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aroma-maize-flour" class="product-detail">
+  <div class="wrap">
+    <div class="product-detail-grid">
+      <div class="product-detail-media">
+        <picture><source srcset="assets/products/aroma-maize-flour.webp" type="image/webp"><img src="assets/products/aroma-maize-flour.png" loading="lazy" alt="Aroma Sifted Maize Flour 1kg pack"></picture>
+      </div>
+      <div class="product-detail-body">
+        <span class="product-tag">Premium Maize Flour</span>
+        <h3>Aroma Sifted Maize Flour</h3>
+        <p>Finely sifted, premium maize flour fortified with essential minerals and vitamins, giving your family soft, delicious ugali every day — with the vitality that comes from proper nutrition.</p>
+        <span class="product-pack">1kg Net Pack</span>
+        <div class="product-detail-cols">
+          <div>
+            <h5>Benefits</h5>
+            <ul><li>Fortified with vitamins &amp; minerals</li><li>Fine, smooth texture</li><li>High quality milling</li><li>Everyday family meal</li></ul>
+          </div>
+          <div>
+            <h5>Ingredients</h5>
+            <ul><li>Premium sifted maize</li><li>Essential vitamins</li><li>Essential minerals</li></ul>
+          </div>
+        </div>
+        <div class="product-ideal">
+          <span>Daily meals</span><span>Growing children</span><span>Schools</span><span>Hospitals</span><span>Homes</span>
+        </div>
+        <a href="contact.html#quote" class="product-cta-btn">Request a Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="nzima-composite-flour" class="product-detail">
+  <div class="wrap">
+    <div class="product-detail-grid">
+      <div class="product-detail-media">
+        <picture><source srcset="assets/products/nzima-composite-flour.webp" type="image/webp"><img src="assets/products/nzima-composite-flour.png" loading="lazy" alt="Nzima Composite Flour 1kg pack"></picture>
+      </div>
+      <div class="product-detail-body">
+        <span class="product-tag">Composite Flour</span>
+        <h3>Nzima Composite Flour</h3>
+        <p>A healthy blend of maize and sorghum built for everyday cooking and baking — delivering better nutrition, great taste and wholesome traditional meals for the whole family.</p>
+        <span class="product-pack">1kg Net Pack</span>
+        <div class="product-detail-cols">
+          <div>
+            <h5>Benefits</h5>
+            <ul><li>Maize &amp; sorghum blend</li><li>High in fibre</li><li>Nutritious</li><li>Traditional taste</li></ul>
+          </div>
+          <div>
+            <h5>Ingredients</h5>
+            <ul><li>Maize</li><li>Sorghum (Mtama)</li></ul>
+          </div>
+        </div>
+        <div class="product-ideal">
+          <span>Everyday cooking</span><span>Baking</span><span>Schools</span><span>Homes</span>
+        </div>
+        <a href="contact.html#quote" class="product-cta-btn">Request a Quote <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
     </div>
   </div>
 </section>
