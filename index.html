@@ -11,9 +11,10 @@
 <link rel="canonical" href="./">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/style.css">
+<link rel="preload" as="image" href="assets/img/hero-mother-child-1024.webp" imagesrcset="assets/img/hero-mother-child-700.webp 700w, assets/img/hero-mother-child-1024.webp 1024w, assets/img/hero-mother-child.webp 1536w" imagesizes="(max-width:1023px) 100vw, 58vw">
 </head>
 <body>
-<header id="siteHeader">
+<header id="siteHeader" class="solid">
   <div class="nav-inner">
     <a href="index.html" class="brand"><img src="assets/img/logo.png" class="brand-mark" alt="Jufra Food Processors logo"><span class="logo">Jufra<em>.</em></span></a>
     <nav class="main-nav" id="mainNav">
@@ -38,15 +39,39 @@
   </div>
 </header>
 
-<section class="hero" id="top">
-  <div class="wrap hero-content">
-    <span class="eyebrow">East Africa's Indigenous Grain Nutrition Company</span>
-    <h1>Nourishing Africa, <em>naturally.</em></h1>
-    <p>Premium foods made from sorghum, millet and amaranth — grown by Kenyan smallholder farmers, processed with zero chemicals, and delivered to families who deserve better nutrition.</p>
-    <div class="hero-actions">
-      <a href="products.html" class="btn btn-primary">Shop Products</a>
-      <a href="farmers.html#supplier" class="btn btn-outline on-dark">Become a Supplier</a>
-      <a href="about.html" class="btn btn-outline on-dark">Explore Our Story</a>
+<section class="hero-premium" id="top">
+  <div class="hp-grain-bg" aria-hidden="true"></div>
+  <div class="wrap hp-grid">
+    <div class="hp-content">
+      <span class="hp-eyebrow" id="hpEyebrow">Premium Indigenous Grain Foods</span>
+      <h1 class="hp-heading" id="hpHeading">
+        <span class="hp-line">Nourishing Families.</span>
+        <span class="hp-line">Empowering Farmers.</span>
+        <span class="hp-line">Growing Kenya.</span>
+      </h1>
+      <p class="hp-sub" id="hpSub">We transform locally sourced indigenous grains into nutritious, high-quality food products that nourish families, empower farmers, and contribute to healthier communities across Kenya.</p>
+      <div class="hp-actions" id="hpActions">
+        <a href="products.html" class="hp-btn hp-btn-primary">Explore Our Products</a>
+        <a href="impact.html" class="hp-btn hp-btn-outline">Our Impact</a>
+      </div>
+      <ul class="hp-badges" id="hpBadges">
+        <li><span class="hp-badge-icon" aria-hidden="true">🌾</span>Indigenous Grains</li>
+        <li><span class="hp-badge-icon" aria-hidden="true">🌿</span>100% Natural</li>
+        <li><span class="hp-badge-icon" aria-hidden="true">❤️</span>Nutritious for Families</li>
+        <li><span class="hp-badge-icon" aria-hidden="true">👩🏾‍🌾</span>Supporting Local Farmers</li>
+      </ul>
+    </div>
+    <div class="hp-media" id="hpMedia">
+      <div class="hp-media-frame">
+        <picture>
+          <source media="(max-width:700px)" srcset="assets/img/hero-mother-child-700.webp" type="image/webp">
+          <source media="(max-width:700px)" srcset="assets/img/hero-mother-child-700.jpg">
+          <source media="(max-width:1180px)" srcset="assets/img/hero-mother-child-1024.webp" type="image/webp">
+          <source media="(max-width:1180px)" srcset="assets/img/hero-mother-child-1024.jpg">
+          <source srcset="assets/img/hero-mother-child.webp" type="image/webp">
+          <img src="assets/img/hero-mother-child.jpg" alt="Mother feeding her young child a bowl of Jufra Delight Uji Mix made from nutritious indigenous grains." width="1536" height="1024" fetchpriority="high">
+        </picture>
+      </div>
     </div>
   </div>
 </section>
@@ -73,32 +98,57 @@
       <span class="eyebrow">Featured Products</span>
       <h2>Made for the family table</h2>
     </div>
-    <div class="product-grid">
+    <div class="product-grid-4">
       <div class="product-card">
-        <div class="product-media"><img src="assets/img/products-lineup.jpg" alt="Jufra Delight Uji Mix and Delight Uji Mix Sour packaging"></div>
+        <div class="product-media">
+          <span class="product-badge">Instant Porridge Mix</span>
+          <picture><source srcset="assets/products/delight-uji-mix.webp" type="image/webp"><img src="assets/products/delight-uji-mix.png" loading="lazy" alt="Jufra Delight Uji Mix 1kg pack"></picture>
+        </div>
         <div class="product-body">
           <span class="product-tag">Porridge Flour</span>
           <h4>Delight Uji Mix</h4>
-          <p>Our flagship porridge blend of pearl millet, finger millet and sorghum — gluten-free with no additives.</p>
-          <div class="product-links"><a href="products.html#porridge">View Product</a></div>
+          <p>A nutritious blend of indigenous grains — pearl millet, finger millet, sorghum and maize. Rich in fibre and ideal for the whole family.</p>
+          <div class="product-chips"><span>Gluten Free</span><span>No Additives</span><span>High Fibre</span></div>
+          <div class="product-links"><a href="products.html#delight-uji-mix">View Product</a></div>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-media"><img src="assets/img/product-bags.jpg" alt="Jufra Delight Uji Mix packaging"></div>
+        <div class="product-media">
+          <span class="product-badge">Fermented Porridge Mix</span>
+          <picture><source srcset="assets/products/delight-uji-mix-sour.webp" type="image/webp"><img src="assets/products/delight-uji-mix-sour.png" loading="lazy" alt="Jufra Delight Uji Mix Sour 1kg pack"></picture>
+        </div>
         <div class="product-body">
-          <span class="product-tag">Composite Flour</span>
-          <h4>Nzima Composite Flour</h4>
-          <p>A maize and sorghum blend built for everyday cooking and baking, at 1Kg net.</p>
-          <div class="product-links"><a href="products.html#composite">View Product</a></div>
+          <span class="product-tag">Porridge Flour</span>
+          <h4>Delight Uji Mix Sour</h4>
+          <p>Traditional fermented uji made from carefully selected indigenous grains, for a rich authentic taste and superior nutrition.</p>
+          <div class="product-chips"><span>Naturally Fermented</span><span>Gluten Free</span></div>
+          <div class="product-links"><a href="products.html#delight-uji-mix-sour">View Product</a></div>
         </div>
       </div>
       <div class="product-card">
-        <div class="product-media" style="display:flex;align-items:center;justify-content:center;"><svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#2E7D32" stroke-width="1.4"><circle cx="12" cy="12" r="9"/><path d="M12 3v18M3 12h18"/></svg></div>
+        <div class="product-media">
+          <span class="product-badge">Premium Maize Flour</span>
+          <picture><source srcset="assets/products/aroma-maize-flour.webp" type="image/webp"><img src="assets/products/aroma-maize-flour.png" loading="lazy" alt="Aroma Sifted Maize Flour 1kg pack"></picture>
+        </div>
         <div class="product-body">
           <span class="product-tag">Pure Grain Flour</span>
           <h4>Aroma Sifted Maize Flour</h4>
-          <p>Fine-sifted, fortified maize flour with essential minerals and vitamins for everyday vitality.</p>
-          <div class="product-links"><a href="products.html#pure">View Product</a></div>
+          <p>Finely sifted premium maize flour fortified with essential nutrients, for soft, delicious ugali every day.</p>
+          <div class="product-chips"><span>Fortified</span><span>Fine Texture</span></div>
+          <div class="product-links"><a href="products.html#aroma-maize-flour">View Product</a></div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-media">
+          <span class="product-badge">Composite Flour</span>
+          <picture><source srcset="assets/products/nzima-composite-flour.webp" type="image/webp"><img src="assets/products/nzima-composite-flour.png" loading="lazy" alt="Nzima Composite Flour 1kg pack"></picture>
+        </div>
+        <div class="product-body">
+          <span class="product-tag">Composite Flour</span>
+          <h4>Nzima Composite Flour</h4>
+          <p>A healthy blend of maize and sorghum delivering better nutrition, great taste and wholesome traditional meals.</p>
+          <div class="product-chips"><span>Maize &amp; Sorghum</span><span>High Fibre</span></div>
+          <div class="product-links"><a href="products.html#nzima-composite-flour">View Product</a></div>
         </div>
       </div>
     </div>
@@ -124,17 +174,34 @@
   </div>
 </section>
 
-<section class="impact" style="padding-top:100px;">
+<section class="impact-banner">
+  <picture><source srcset="assets/img/community-2.webp" type="image/webp"><img src="assets/img/community-2.jpg" loading="lazy" alt="Jufra field team with smallholder farmers in Tharaka-Nithi"></picture>
+  <div class="impact-banner-text">
+    <span class="eyebrow">Our Impact</span>
+    <h2>Measurable change, one harvest at a time</h2>
+    <p>Every pack of Jufra flour connects a smallholder farmer to a family table — creating jobs, income and better nutrition across Kenya.</p>
+  </div>
+</section>
+
+<section class="impact" style="padding-top:0;">
   <div class="wrap">
-    <div class="sec-head center">
-      <span class="eyebrow">Our Impact</span>
-      <h2>Measurable change, one harvest at a time</h2>
-    </div>
-    <div class="impact-grid" style="margin-top:0;">
-      <div class="impact-card"><b data-target="4200+">0</b><span>Farmers Empowered</span></div>
-      <div class="impact-card"><b data-target="400+">0</b><span>Youth Jobs Created</span></div>
-      <div class="impact-card"><b data-target="1.2M">0</b><span>Healthy Meals Served</span></div>
-      <div class="impact-card"><b data-target="38">0</b><span>Counties Reached</span></div>
+    <div class="impact-grid overlap-banner">
+      <div class="impact-card">
+        <div class="impact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2c-3 4-5 8-5 12a5 5 0 0010 0c0-4-2-8-5-12z"/></svg></div>
+        <b data-target="4200+">0</b><span>Farmers Empowered</span>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 20c1.4-4 4-6 7.5-6s6.1 2 7.5 6"/></svg></div>
+        <b data-target="400+">0</b><span>Youth Jobs Created</span>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 10c0-2.5 3.5-5 8-5s8 2.5 8 5-3.5 5-8 5-8-2.5-8-5z"/><path d="M4 10v5c0 2.5 3.5 5 8 5s8-2.5 8-5v-5"/></svg></div>
+        <b data-target="1.2M">0</b><span>Healthy Meals Served</span>
+      </div>
+      <div class="impact-card">
+        <div class="impact-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 3 7v6c0 5 4 8 9 9 5-1 9-4 9-9V7l-9-5z"/></svg></div>
+        <b data-target="38">0</b><span>Counties Reached</span>
+      </div>
     </div>
     <div style="text-align:center;margin-top:44px;">
       <a href="impact.html" class="btn btn-outline">See Our Full Impact</a>
@@ -241,6 +308,8 @@
   <br><button class="btn btn-primary" id="cookieAccept">Got it</button>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="assets/js/hero-animate.js"></script>
 </body>
 </html>
