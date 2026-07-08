@@ -81,7 +81,7 @@ document.querySelectorAll('.impact-grid').forEach(grid => {
 const revealObs = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in-view'); });
 }, {threshold:.2});
-document.querySelectorAll('.impact-card, .recognition, .reveal, .product-card').forEach(el => revealObs.observe(el));
+document.querySelectorAll('.impact-card, .recognition-feature, .reveal').forEach(el => revealObs.observe(el));
 
 // ===== Image slider (impact hero) =====
 const slides = document.querySelectorAll('.impact-slider .slide');
